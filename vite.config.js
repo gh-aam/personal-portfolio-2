@@ -1,7 +1,6 @@
 import { resolve } from 'path';
 
 export default {
-  base: '/personal-portfolio-2/',
   root: resolve(__dirname, 'src'),
   build: {
     outDir: '../dist',
