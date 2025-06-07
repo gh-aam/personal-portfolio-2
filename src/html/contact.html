@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact</title>
+  <script type="module" src="/js/main.js"></script>
+</head>
+
+<body>
+  <header>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="/"><i class="bi bi-code-slash me-2"></i>Abdullah Al Mamun</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/research.html">Research</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/blogs.html">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Contact form -->
+    <section id="contact" class="py-4">
+      <div class="container">
+        <h2 class="text-center mb-4"><i class="bi bi-envelope-fill fs-4 me-2"></i>Contact Me</h2>
+        <form class="needs-validation" novalidate>
+          <div class="form-group mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your name" required>
+            <div class="invalid-feedback">
+              Please enter your name.
+            </div>
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Your email" required>
+            <div class="invalid-feedback">
+              Please enter a valid email address.
+            </div>
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Your message" required></textarea>
+            <div class="invalid-feedback">
+              Please write a message.
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <!-- Success Modal -->
+        <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header bg-secondary text-white">
+                <h5 class="modal-title" id="successModalLabel">Message Sent</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Your message has been sent successfully!
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ok</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-3">
+    <div class="container text-center">
+      <p class="mb-2">
+        &copy; <span id="year"></span> Abdullah Al Mamun
+      </p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="https://github.com/gh-aam" target="_blank" class="text-light fs-6" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ldn0-aam" target="_blank" class="text-light fs-6" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://x.com/mamun777_aam" target="_blank" class="text-light fs-6" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="mailto:mamun777.aam@gmail.com" class="text-light fs-6" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
